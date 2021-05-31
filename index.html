@@ -1,0 +1,723 @@
+<!doctype html>
+<html lang="en">
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> -->
+
+    <title>Hello, world!</title>
+    <style>
+
+        /* table{
+            font-size: 20px;
+        } */
+
+        table, th, td {
+          border: 1px solid black;
+          width: 5%;
+          text-align: center; 
+          background-color: DarkGray; 
+        }
+        
+        table { margin: auto;width: 55%; }
+
+        .tablehead{
+            font-weight: bold;
+        }
+        /* input,p { text-align:right; } */
+        
+    </style>
+  </head>
+  <body>
+    <div class="container">
+        <h1><center> <b>HDR Frame Calculator</b></center></h1>
+        <table>
+            <tr>
+              <th>Items</th>
+              <th>Type</th>
+              <th>Length - cms</th>
+              <th>Qty</th>
+              <th>Thickness - mm</th>
+              <th>Strip Width - cm</th>
+              <th>S Area - Sqft	</th>
+              <th>Weight - Kgs	</th>
+              <th>RM Cost</th>
+              <th>FAB Cost	</th>
+              <th>Pc cost	</th>
+              <th>Total Cost	</th>
+              <th>Unit Price	</th>
+              <th>Frame Price</th>
+            </tr>
+            <tr>
+              <td class="tablehead">Upright</td>
+              <td>UP1</td>
+              <td><input type="text" placeholder="700" style="width: 30px;"></td>
+              <td><input type="text" placeholder="2" style="width: 30px;"></td>
+              <td><input type="text" placeholder="2" style="width: 30px;"></td>
+              <td><input type="text" placeholder="28" style="width: 30px;"></td>
+              <td>42</td>
+              <td>31</td>
+              <td>2216</td>
+              <td>140</td>
+              <td>506</td>
+              <td>2861</td>
+              <td>3815</td>
+              <td rowspan="10">10327</td>
+            </tr>
+            <tr>
+                <td class="tablehead">HB</td>
+                <td></td>
+                <td><input type="text" placeholder="110" style="width: 30px;"></td>
+                <td><input type="text" placeholder="2" style="width: 30px;"></td>
+                <td><input type="text" placeholder="1.6" style="width: 30px;"></td>
+                <td><input type="text" placeholder="9.0" style="width: 30px;"></td>
+                <td>2.13</td>
+                <td>1.24</td>
+                <td>80</td>
+                <td>10</td>
+                <td>17</td>
+                <td>107</td>
+                <td>142</td>
+            </tr>
+            <tr>
+                <td class="tablehead">CB</td>
+                <td></td>
+                <td><input type="text" placeholder="150" style="width: 30px;"></td>
+                <td><input type="text" placeholder="10" style="width: 30px;"></td>
+                <td><input type="text" placeholder="1.6" style="width: 30px;"></td>
+                <td><input type="text" placeholder="9.0" style="width: 30px;"></td>
+                <td>2.90</td>
+                <td>1.70</td>
+                <td>109</td>
+                <td>10</td>
+                <td>23</td>
+                <td>142</td>
+                <td>189</td>
+            </tr>
+            <tr>
+                <td class="tablehead">STIFFNER 1	</td>
+                <td></td>
+                <td><input type="text" placeholder="0" style="width: 30px;"></td>
+                <td><input type="text" placeholder="0" style="width: 30px;"></td>
+                <td><input type="text" placeholder="0" style="width: 30px;"></td>
+                <td><input type="text" placeholder="0" style="width: 30px;"></td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+            </tr>
+            <tr>
+                <td class="tablehead">STIFFNER 2</td>
+                <td></td>
+                <td><input type="text" placeholder="0" style="width: 30px;"></td>
+                <td><input type="text" placeholder="0" style="width: 30px;"></td>
+                <td><input type="text" placeholder="0" style="width: 30px;"></td>
+                <td><input type="text" placeholder="0" style="width: 30px;"></td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+            </tr>
+            <tr>
+                <td class="tablehead">STIFFNER 3</td>
+                <td></td>
+                <td><input type="text" placeholder="0" style="width: 30px;"></td>
+                <td><input type="text" placeholder="0" style="width: 30px;"></td>
+                <td><input type="text" placeholder="0" style="width: 30px;"></td>
+                <td><input type="text" placeholder="0" style="width: 30px;"></td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+            </tr>
+            <tr>
+                <td class="tablehead">BASE PLATES</td>
+                <td></td>
+                <td></td>
+                <td><input placeholder="2" type="text" style="width: 30px;"></td>
+                <td></td>
+                <td></td>
+                <td>0</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>80</td>
+                <td><input placeholder="107" type="text" style="width: 30px;"></td>
+            </tr>
+            <tr>
+                <td class="tablehead">BUSHES</td>
+                <td></td>
+                <td></td>
+                <td><input placeholder="2" type="text" style="width: 30px;"></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>5</td>
+            </tr>
+            <tr>
+                <td class="tablehead">FRAME BOLTS</td>
+                <td></td>
+                <td></td>
+                <td>18</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td><input placeholder="10" type="text" style="width: 30px;"></td>
+            </tr>
+            <tr>
+                <td class="tablehead">GROUT BOLTS</td>
+                <td></td>
+                <td></td>
+                <td>4</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td><input placeholder="30" type="text" style="width: 30px;"></td>
+            </tr>
+            
+          </table>
+    </div>
+
+    <div class="container">
+        <h1><center> <b>Beam Calculator</b></center></h1>
+        <table>
+            <tr>
+              <th>Items</th>
+              <th>Type</th>
+              <th>Length - cms</th>
+              <th>Qty</th>
+              <th>Thickness - mm</th>
+              <th>Strip Width - cm</th>
+              <th>S Area - Sqft	</th>
+              <th>Weight - Kgs	</th>
+              <th>RM Cost</th>
+              <th>FAB Cost	</th>
+              <th>Pc cost	</th>
+              <th>Total Cost	</th>
+              <th>Unit Price	</th>
+              <th>Frame Price</th>
+            </tr>
+            <tr>
+              <td class="tablehead">Beam 1</td>
+              <td></td>
+              <td><input placeholder="270" type="text" style="width: 30px;"></td>
+              <td><input placeholder="10" type="text" style="width: 30px;"></td>
+              <td><input placeholder="1.6" type="text" style="width: 30px;"></td>
+              <td><input placeholder="11" type="text" style="width: 30px;"></td>
+              <td>11</td>
+              <td>15</td>
+              <td>994</td>
+              <td>130</td>
+              <td>92</td>
+              <td>1216</td>
+              <td>1621</td>
+              <td rowspan="10">16425</td>
+            </tr>
+            <tr>
+                <td class="tablehead">Beam 2</td>
+                <td></td>
+                <td><input placeholder="0" type="text" style="width: 30px;"></td>
+                <td><input placeholder="0" type="text" style="width: 30px;"></td>
+                <td><input placeholder="0" type="text" style="width: 30px;"></td>
+                <td><input placeholder="0" type="text" style="width: 30px;"></td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                
+            </tr>
+            <tr>
+                <td class="tablehead">Beam 3</td>
+                <td></td>
+                <td><input placeholder="0" type="text" style="width: 30px;"></td>
+                <td><input placeholder="0" type="text" style="width: 30px;"></td>
+                <td><input placeholder="0" type="text" style="width: 30px;"></td>
+                <td><input placeholder="0" type="text" style="width: 30px;"></td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+            </tr>
+            <tr>
+                <td class="tablehead">Beam Bolts</td>
+                <td></td>
+                <td></td>
+                <td>40</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td><input placeholder="4" type="text" style="width: 30px;"></td>
+                <td>5</td>
+            </tr>
+          </table>
+    </div>
+
+    <div class="container">
+        <h1><center> <b>Deck Panels Calculator</b></center></h1>
+        <table>
+            <tr>
+              <th>Items</th>
+              <th>Type</th>
+              <th>Length - cms</th>
+              <th>Qty</th>
+              <th>Thickness - mm</th>
+              <th>Strip Width - cm</th>
+              <th>S Area - Sqft	</th>
+              <th>Weight - Kgs	</th>
+              <th>RM Cost</th>
+              <th>FAB Cost	</th>
+              <th>Pc cost	</th>
+              <th>Total Cost	</th>
+              <th>Unit Price	</th>
+              <th>Frame Price</th>
+            </tr>
+            <tr>
+              <td class="tablehead">DECK PANEL 1</td>
+              <td>GI</td>
+              <td><input placeholder="0" type="text" style="width: 30px;"></td>
+              <td><input placeholder="0" type="text" style="width: 30px;"></td>
+              <td><input placeholder="0.8" type="text" style="width: 30px;"></td>
+              <td><input placeholder="25" type="text" style="width: 30px;"></td>
+              <td>0</td>
+              <td>0.00</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td rowspan="10">0</td>
+            </tr>
+            <tr>
+                <td class="tablehead">DECK PANEL 2</td>
+                <td>GI</td>
+                <td><input placeholder="0" type="text" style="width: 30px;"></td>
+                <td><input placeholder="0" type="text" style="width: 30px;"></td>
+                <td><input placeholder="0" type="text" style="width: 30px;"></td>
+                <td><input placeholder="0" type="text" style="width: 30px;"></td>
+                <td>0</td>
+                <td>0.00</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+            </tr>
+            <tr>
+                <td class="tablehead">DECK PANEL 3</td>
+                <td>HR</td>
+                <td><input placeholder="0" type="text" style="width: 30px;"></td>
+                <td><input placeholder="0" type="text" style="width: 30px;"></td>
+                <td><input placeholder="0" type="text" style="width: 30px;"></td>
+                <td><input placeholder="0" type="text" style="width: 30px;"></td>
+                <td>0</td>
+                <td>0.00</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+            </tr>
+            <tr>
+                <td class="tablehead">PANEL BOLTS</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td><input placeholder="5" type="text" style="width: 30px;"></td>
+                <td>7</td>
+            </tr>
+          </table>
+    </div>
+    <div class="container">
+        <h1><center> <b>SKIDS/PSB Calculator</b></center></h1>
+        <table>
+            <tr>
+              <th>Items</th>
+              <th>Type</th>
+              <th>Length - cms</th>
+              <th>Qty</th>
+              <th>Thickness - mm</th>
+              <th>Strip Width - cm</th>
+              <th>S Area - Sqft	</th>
+              <th>Weight - Kgs	</th>
+              <th>RM Cost</th>
+              <th>FAB Cost	</th>
+              <th>Pc cost	</th>
+              <th>Total Cost	</th>
+              <th>Unit Price	</th>
+              <th>Frame Price</th>
+            </tr>
+            <tr>
+              <td class="tablehead">SKID 1</td>
+              <td></td>
+              <td><input placeholder="0" type="text" style="width: 30px;"></td>
+              <td><input placeholder="0" type="text" style="width: 30px;"></td>
+              <td><input placeholder="0" type="text" style="width: 30px;"></td>
+              <td><input placeholder="0" type="text" style="width: 30px;"></td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td rowspan="10">0</td>
+            </tr>
+            <tr>
+                <td class="tablehead">SKID 2</td>
+                <td></td>
+                <td><input placeholder="0" type="text" style="width: 30px;"></td>
+                <td><input placeholder="0" type="text" style="width: 30px;"></td>
+                <td><input placeholder="0" type="text" style="width: 30px;"></td>
+                <td><input placeholder="0" type="text" style="width: 30px;"></td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+            </tr>
+            <tr>
+                <td class="tablehead">PSB- 1</td>
+                <td><input placeholder="PIPE" type="text" style="width: 30px;"></td>
+                <td><input placeholder="0" type="text" style="width: 30px;"></td>
+                <td><input placeholder="0" type="text" style="width: 30px;"></td>
+                <td><input placeholder="0" type="text" style="width: 30px;"></td>
+                <td><input placeholder="0" type="text" style="width: 30px;"></td>
+                <td>0</td>
+                <td>0.8</td>
+                <td>49</td>
+                <td>0</td>
+                <td>0</td>
+                <td>49</td>
+                <td>65</td>
+            </tr>
+            <tr>
+                <td class="tablehead">PSB- 2</td>
+                <td><input placeholder="HR" type="text" style="width: 30px;"></td>
+                <td><input placeholder="0" type="text" style="width: 30px;"></td>
+                <td><input placeholder="0" type="text" style="width: 30px;"></td>
+                <td><input placeholder="0" type="text" style="width: 30px;"></td>
+                <td><input placeholder="0" type="text" style="width: 30px;"></td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+            </tr>
+          </table>
+    </div>
+
+    <div class="container">
+        <h1><center> <b>Stopper Calculator</b></center></h1>
+        <table>
+            <tr>
+              <th>Items</th>
+              <th>Type</th>
+              <th>Length - cms</th>
+              <th>Qty</th>
+              <th>Thickness - mm</th>
+              <th>Strip Width - cm</th>
+              <th>S Area - Sqft	</th>
+              <th>Weight - Kgs	</th>
+              <th>RM Cost</th>
+              <th>FAB Cost	</th>
+              <th>Pc cost	</th>
+              <th>Total Cost	</th>
+              <th>Unit Price	</th>
+              <th>Frame Price</th>
+            </tr>
+            <tr>
+              <td class="tablehead">Stopper 1</td>
+              <td><input placeholder="PIPE" type="text" style="width: 30px;"></td>
+                <td><input placeholder="280" type="text" style="width: 30px;"></td>
+                <td><input placeholder="1" type="text" style="width: 30px;"></td>
+                <td><input placeholder="1.6" type="text" style="width: 30px;"></td>
+                <td><input placeholder="24" type="text" style="width: 30px;"></td>
+              <td>8.2</td>
+              <td>9.2</td>
+              <td>597</td>
+              <td>50</td>
+              <td>58</td>
+              <td>705</td>
+              <td>940</td>
+              <td rowspan="10">940</td>
+            </tr>
+            <tr>
+                <td class="tablehead">Stopper 2</td>
+                <td><input placeholder="HR" type="text" style="width: 30px;"></td>
+                <td><input placeholder="0" type="text" style="width: 30px;"></td>
+                <td><input placeholder="0" type="text" style="width: 30px;"></td>
+                <td><input placeholder="0" type="text" style="width: 30px;"></td>
+                <td><input placeholder="0" type="text" style="width: 30px;"></td>
+                <td>0.0</td>
+                <td>0.0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+            </tr>
+          </table>
+    </div>
+
+    <div class="container">
+        <h1><center> <b>Accessories Calculator</b></center></h1>
+        <table>
+            <tr>
+              <th>Items</th>
+              <th>Type</th>
+              <th>Length - cms</th>
+              <th>Qty</th>
+              <th>Thickness - mm</th>
+              <th>Strip Width - cm</th>
+              <th>S Area - Sqft	</th>
+              <th>Weight - Kgs	</th>
+              <th>RM Cost</th>
+              <th>FAB Cost	</th>
+              <th>Pc cost	</th>
+              <th>Total Cost	</th>
+              <th>Unit Price	</th>
+              <th>Frame Price</th>
+            </tr>
+            <tr>
+              <td class="tablehead">Row Ties</td>
+              <td></td>
+                <td></td>
+                <td><input placeholder="0" type="text" style="width: 30px;"></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>100</td>
+              <td rowspan="10">0</td>
+            </tr>
+            <tr>
+                <td class="tablehead">Block Ties</td>
+                <td></td>
+                <td></td>
+                <td><input placeholder="0" type="text" style="width: 30px;"></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>750</td>
+            </tr>
+            <tr>
+                <td class="tablehead">Column Guard</td>
+                <td></td>
+                <td></td>
+                <td><input placeholder="0" type="text" style="width: 30px;"></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>250</td>
+            </tr>
+            <tr>
+                <td class="tablehead">Row Guard</td>
+                <td></td>
+                <td></td>
+                <td><input placeholder="0" type="text" style="width: 30px;"></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>350</td>
+            </tr>
+            <tr>
+                <td class="tablehead">Wire Mesh	</td>
+                <td></td>
+                <td></td>
+                <td><input placeholder="0" type="text" style="width: 30px;"></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>1500</td>
+            </tr>
+          </table>
+    </div>
+
+    <div class="container">
+        <h1><center> <b>Total Cost</b></center></h1>
+        <table>
+            <tr>
+                <th></th>
+                <th>Qty</th>
+                <th>UP</th>
+                <th>TP</th>
+                <!-- <th></th>
+                <th></th> -->
+            </tr>
+            <tr>
+                <td class="tablehead">MAIN MODULE	</td>
+                <td><input placeholder="6" type="text" style="width: 70%;"></td>
+                <td>37080</td>
+                <td>222479.0458</td>
+                <td rowspan="15" ><input style="width: 90%;" type="button" value="Calculate"></td>
+                <td rowspan="15" ><input style="width: 90%;" type="button" value="Clear"></td>
+            </tr>
+            <tr>
+                <td class="tablehead">ADD ON MODULE	</td>
+                <td><input placeholder="51" type="text" style="width: 70%;"></td>
+                <td>26752</td>
+                <td>1364370.815</td>
+            </tr>
+            <tr>
+                <td class="tablehead">DECK PANELS 1	</td>
+                <td><input placeholder="1742" type="text" style="width: 70%;"></td>
+                <td>0</td>
+                <td>0</td>
+            </tr>
+            <tr>
+                <td class="tablehead">DECK PANELS 2	</td>
+                <td><input placeholder="1" type="text" style="width: 70%;"></td>
+                <td>0</td>
+                <td>0</td>
+            </tr>
+            <tr>
+                <td class="tablehead">DECK PANELS 3	</td>
+                <td><input placeholder="1" type="text" style="width: 70%;"></td>
+                <td>0</td>
+                <td>0</td>
+            </tr>
+            <tr>
+                <td class="tablehead">SKID 1	</td>
+                <td><input placeholder="1" type="text" style="width: 70%;"></td>
+                <td>0</td>
+                <td>0</td>
+            </tr>
+            <tr>
+                <td class="tablehead">SKID 2</td>
+                <td><input placeholder="1" type="text" style="width: 70%;"></td>
+                <td>0</td>
+                <td>0</td>
+            </tr>
+            <tr>
+                <td class="tablehead">PSB 1	</td>
+                <td><input placeholder="1" type="text" style="width: 70%;"></td>
+                <td>0</td>
+                <td>0</td>
+            </tr>
+            <tr>
+                <td class="tablehead">ROW TIES	</td>
+                <td><input placeholder="0" type="text" style="width: 70%;"></td>
+                <td>100</td>
+                <td>0</td>
+            </tr>
+            <tr>
+                <td class="tablehead">BLOCK TIES	</td>
+                <td><input placeholder="0" type="text" style="width: 70%;"></td>
+                <td>750</td>
+                <td>0</td>
+            </tr>
+            <tr>
+                <td class="tablehead">BACK STOPPER	</td>
+                <td><input placeholder="0" type="text" style="width: 70%;"></td>
+                <td>940</td>
+                <td>0</td>
+            </tr>
+            <tr>
+                <td class="tablehead">BACK STOPPER 2	</td>
+                <td><input placeholder="0" type="text" style="width: 70%;"></td>
+                <td>0</td>
+                <td>0</td>
+            </tr>
+            <tr>
+                <td class="tablehead">COLUMN GAURD	</td>
+                <td><input placeholder="134" type="text" style="width: 70%;"></td>
+                <td>350</td>
+                <td>46900</td>
+            </tr>
+            <tr>
+                <td class="tablehead">ROW GAURD	</td>
+                <td><input placeholder="12" type="text" style="width: 70%;"></td>
+                <td>1500</td>
+                <td>18000</td>
+            </tr>
+            <tr>
+                <td class="tablehead">WIRE MESH	</td>
+                <td><input placeholder="" type="text" style="width: 70%;"></td>
+                <td></td>
+                <td>0</td>
+            </tr>
+            
+          </table>
+    </div>
+
+
+    
+    
+
+    <!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script> -->
+  </body>
+</html>
